@@ -29,6 +29,4 @@ most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
 
 Answer:
-A good invariant would be the value of n is a non-negative integer. This is because fib(n) takes an integer and it will be recursively operated and reduces n each time.
-The function always operates on a non-negative integer, which are ensured by the base case checks which will prevent recursion for negative numbers. Thus, at the beginning
-of each recursive call, the input n is always a non-negative integer.
+A good invariant would be the value of n is a non-negative integer. This is because fib(n) takes an integer and it will be recursively operated and reduces n each time. This invariant helps prove the correctness of the function because it ensures that the input is valid at each step, it progression to a base case, and the output will always be an array of Fibonacci numbers.The function always operates on a non-negative integer, which are ensured by the base case checks which will prevent recursion for negative numbers. Thus, at the beginning of each recursive call, the input n is always a non-negative integer.
