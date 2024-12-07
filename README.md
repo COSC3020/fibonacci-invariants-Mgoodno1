@@ -27,3 +27,7 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+Answer:
+A good invariant would be [0... n - 1].
+This invariant is directly tied to how the fibonacci sequence is being constructed within the recursive function. At each recurssion the function will ensure that all computed fibonnacci numbers up to n-1 are correct before computing fib(n). Thus, the invariant will hold true at the begining of each recursive call and will ensure the array will correctly represent the sequence up to the index n. For example fib(3), the sequence [0, 1, 1] would be already computed, then fib(3) is computed as fib(2) + fib(1) giving 2, producing [0, 1, 1, 2].
