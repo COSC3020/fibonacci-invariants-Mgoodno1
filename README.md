@@ -29,5 +29,10 @@ most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
 
 Answer:
-A good invariant would be [0... n - 1].
-This invariant is directly tied to how the fibonacci sequence is being constructed within the recursive function. At each recurssion the function will ensure that all computed fibonnacci numbers up to n-1 are correct before computing fib(n). Thus, the invariant will hold true at the begining of each recursive call and will ensure the array will correctly represent the sequence up to the index n. For example fib(3), the sequence [0, 1, 1] would be already computed, then fib(3) is computed as fib(2) + fib(1) giving 2, producing [0, 1, 1, 2].
+A good invariant would be at the start for each recursive call to fib(n), the fibonacci numbers for indices 0 to n - 1.
+This invariant would work because the fibonacci numbers for all previous indices are computed before calculating fib(n). Which ensures that the function can compute fib(n) using the previously computed values of fib(n-1) and fib(n-2). For example fib(3), the sequence [0, 1, 1] would be already computed, then fib(3) is computed as fib(2) + fib(1) giving 2, producing [0, 1, 1, 2].
+
+
+Sources:
+Lecture slides 
+Using ChatGPT to understand some of the logic of invariants more precisely
