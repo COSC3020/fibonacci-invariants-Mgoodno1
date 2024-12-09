@@ -33,6 +33,9 @@ A good invariant would be at the start for each recursive call to fib(n), the fi
 Which is true when the function is about to compute fib(n) in a recursive call and all previous fibonacci numbers have been calculated for use. While it is false when the function has not yet computed all the necessary fibonacci numbers (at an earlier stage of recursion) then the invariant would not hold. However, this invariant holds true at every step of recursion and it guarantees that the fibonacci numbers will always be available when they are needed.
 This invariant would work because the fibonacci numbers for all previous indices are computed before calculating fib(n). Which ensures that the function can compute fib(n) using the previously computed values of fib(n-1) and fib(n-2). For example fib(3), the sequence [0, 1, 1] would be already computed, then fib(3) is computed as fib(2) + fib(1) giving 2, producing [0, 1, 1, 2].
 
+# Plagarism Statement
+All exercises must contain the following statement: “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
+
 
 Sources:
 Lecture slides 
